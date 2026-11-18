@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/abhishekbguttedar-prog/devops-cicd-project1.git'
+                git branch: 'main',
+                    url: 'https://github.com/abhishekbguttedar-prog/devops-cicd-project.git'
             }
         }
 
